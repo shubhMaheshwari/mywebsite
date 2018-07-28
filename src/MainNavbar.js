@@ -16,7 +16,7 @@ class MainNavbar extends Component {
                     {/* Show button for toggle navigation on small devices */}
                     <a className="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onClick={() => {
                         var x = document.getElementById("navDemo");
-                        if (x.className.indexOf("w3-show") == -1) x.className += " w3-show";
+                        if (x.className.indexOf("w3-show") === -1) x.className += " w3-show";
                         else x.className = x.className.replace(" w3-show", "");                
                         }
                         } title="Toggle Navigation Menu"><i className="fa fa-bars"></i></a>

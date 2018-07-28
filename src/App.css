@@ -1,12 +1,61 @@
 /* All the CSS for particular classes can be found here */
 
+a:hover {
+  color: #ffffff;
+}
+
 .navbar {
   /* height: 100px; */
   margin-bottom: 0px;
 }
 
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+  opacity: 1;
+}
+
+/* Horizontal sliding animation */
+.horozontal_slide-enter {
+  transform: translate(100%);
+}
+.horozontal_slide-enter.horozontal_slide-enter-active {
+  transform: translate(0%);
+  transition: transform 1000ms ease-in-out;
+}
+.horozontal_slide-leave {
+  transform: translate(0%);
+}
+.horozontal_slide-leave.horozontal_slide-leave-active {
+  transform: translate(-100%);
+  transition: transform 1000ms ease-in-out;
+}
+
+.slick-dots li button:before {
+  font-size: 24px;
+  color: #bbbbbb;
+  opacity: 1;
+}
+
+.slick-dots {
+  top: 85%;
+  font-color: #000000;
+}
+.slick-next:before {
+  font-size: 3rem;
+}
+
+
+.slick-prev:before {
+  font-size: 3rem;
+}
+
+
+
 .App {
-  text-align: center;
+text-align: center;
+  
 }
 
 .App-logo {
@@ -32,4 +81,10 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
