@@ -58,7 +58,7 @@ class AboutSection extends Component{
               <p className="w3-large "> I am Shubh Maheshwari.</p>
               <p className="w3-large "> Geek, Guitarist, Gregarious </p>
               <p className="w3-large "> Pursuing B.Tech in Computer Science at IIIT Hyderabad India. </p>
-              <p className="w3-large "> I’m fiercely competitive personally/professionally but I lose gracefully, </p>
+              <p className="w3-large "> I’m fiercely competitive personally/professionally but I lose gracefully. </p>
               <p className="w3-large "> My primary interests are Computer Vision, Deep Learning and contributing to a future of AI.</p>
             </div>
         );
@@ -114,7 +114,7 @@ class Homepage extends Component {
     };
 
     render () { 
-        console.log("Are we using Mobile: ",isMobile, this.state.slideCount)
+        // console.log("Are we using Mobile: ",isMobile, this.state.slideCount)
         var settings = {
             accessibility: true,
             dots: true,

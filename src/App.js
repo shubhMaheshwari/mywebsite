@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import {BrowserRouter as Router , Route } from "react-router-dom";
 
 import MainNavbar from './MainNavbar';
 import Homepage from './Homepage';
 import Footer from './Footer';
-import logo from './logo.svg';
+import Projects from './Projects';
+import Blog from './Blog';
+import Bot from './Bot';
 import './App.css';
 
 class App extends Component {
@@ -11,7 +14,14 @@ class App extends Component {
     return (
       <div className="App">
         <MainNavbar /> 
-        <Homepage />       
+        <Bot/>
+        <Router>
+          <div>
+          <Route exact path={"/"} component={Homepage}></Route>
+          <Route exact path={"/projects"} component={Projects}></Route>
+          <Route exact path={"/blog"} component={Blog}></Route>
+          </div>
+        </Router>
         <Footer />
       </div>
     );

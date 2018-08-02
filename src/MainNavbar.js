@@ -6,12 +6,12 @@ class MainNavbar extends Component {
         return (
             <div className="w3-top">
                 <div className="w3-bar w3-black w3-card">
-                    <a href="#home" className="w3-bar-item w3-button w3-padding-large">HOME</a>
-                    <a href="#about" className="w3-bar-item w3-button w3-padding-large">ABOUT</a>
-                    <a href="#contact" className="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+                    <a href="/#home" className="w3-bar-item w3-button w3-padding-large">HOME</a>
+                    <a href="/#about" className="w3-bar-item w3-button w3-padding-large">ABOUT</a>
+                    <a href="/#contact" className="w3-bar-item w3-button w3-padding-large">CONTACT</a>
                     <a href="/projects" className="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
                     <a href="/blog" className="w3-bar-item w3-button w3-padding-large w3-hide-small">BLOG</a>
-                    <a href="/portfolio" className="w3-bar-item w3-button w3-padding-large w3-hide-small">PORTFOLIO</a>
+                    <a href="./Shubh_Maheshwari_visualcv_resume.pdf" className="w3-bar-item w3-button w3-padding-large w3-hide-small">PORTFOLIO</a>
 
                     {/* Show button for toggle navigation on small devices */}
                     <a className="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onClick={() => {
@@ -26,7 +26,7 @@ class MainNavbar extends Component {
                 <div id="navDemo" className="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium" >
                     <a href="/projects" className="w3-bar-item w3-button w3-padding-large ">PROJECTS</a>
                     <a href="/blog" className="w3-bar-item w3-button w3-padding-large ">BLOG</a>
-                    <a href="/portfolio" className="w3-bar-item w3-button w3-padding-large ">PORTFOLIO</a>
+                    <a href="./Shubh_Maheshwari_visualcv_resume.pdf" className="w3-bar-item w3-button w3-padding-large ">PORTFOLIO</a>
                 </div>
             </div>
         );
